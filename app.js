@@ -39,9 +39,8 @@ document.querySelector(".btn-hold").addEventListener("click", () => {
   // Update UI
   document.getElementById(`score-${activePlayer}`).textContent =  scores[activePlayer];
   // Check for win condition/ switch player
-  if (scores[activePlayer] >= 100) {
-    alert(`Player ${activePlayer + 1} Wins`);
-    resetGame();
+  if (scores[activePlayer] >= 15) {
+    document.getElementById(`name-${activePlayer}`).textContent = "Winner!"    
   } else {
     nextPlayer();
   }
