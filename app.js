@@ -47,9 +47,7 @@ document.querySelector(".btn-hold").addEventListener("click", () => {
 });
 
 // New Game event listener
-document.querySelector(".btn-new").addEventListener("click", () => {
-    resetGame();
-})
+document.querySelector(".btn-new").addEventListener("click", resetGame);
 
 function nextPlayer(){
     roundScore = 0;
@@ -74,4 +72,6 @@ document.getElementById("score-0").textContent = "0";
 document.getElementById("score-1").textContent = "0";
 document.getElementById("current-0").textContent = "0";
 document.getElementById("current-1").textContent = "0";
+document.querySelector("#name-0").textContent = "Player 1";
+document.querySelector("#name-1").textContent = "Player 2";
 }
